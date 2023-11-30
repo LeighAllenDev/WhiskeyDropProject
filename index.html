@@ -12,7 +12,17 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+    <div class="container-fluid navalert-container">
+        <div class="container-fluid container-alert">
+        <div class="row">
+            <div class="col-12 d-none d-sm-block">
+                <div class="site-wide-alert alert alert-warning">
+                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="">See here for details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-dark navbar-expand-sm">
         <a href="/" class="navbar-brand">Whiskey Drop</a>
         <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span></button>
@@ -36,21 +46,11 @@
         </div>
         <div class="d-none d-md-block">
             <p class="navbar-text my-auto mr-2"><i>Great whiskey delivered to your door</i></p>
-            <a href="/login">Sign In / Sign Up</a>
+            <a href="/login" class="btn btn--cta btn--red">Sign In / Sign Up</a>
         </div>
     </nav>
-        <!-- Alert -->
+    </div>
     
-    <!-- <div class="container container-alert">
-        <div class="row">
-            <div class="col-12 d-none d-sm-block">
-                <div class="alert alert-warning">
-                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12-month subscription for the price of 6! <a href="">See here for details</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
         <!-- Callout -->
     <div class="container-fluid container-callout">
         <div class="opaque-overlay">&nbsp;</div>
@@ -73,11 +73,13 @@
     
 
         <!-- Quotes -->
-        <div class="container container-quotes">
+        <div class="container-wrapper">    
+        <div class="container container-quotes content-container">
         <section class="quotes">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 page-header">
                     <h2 class="text-uppercase">Quotes:</h2>
+                    <hr class="blockDivider blockDivider-short">
                 </div>
             </div>
             <div class="row">
@@ -111,13 +113,16 @@
         </section>
         <!-- /.quotes -->
         </div>
+        </div>
 
         <!-- Features -->
-        <div class="container container-features">
+        <div class="container-wrapper container-wrapper--red">
+        <div class="container container-features content-container">
         <section class="features">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 page-header">
                     <h2 class="text-uppercase">Features:</h2>
+                    <hr class="blockDivider blockDivider-short blockDivider-white">
                 </div>
             </div>
             <div class="row">
@@ -144,6 +149,7 @@
                 </div>
             </div>
         </section>
+        </div>
         </div>
         <!-- /.features -->
     
